@@ -1,0 +1,14 @@
+body {
+	background: url("../images/sf-fog.gif") no-repeat fixed center ;
+	background-size: cover;
+}
+
+.nav-sp {
+  /* height: 10vh; */
+  background-color: rgba(0,0,0,.6)
+}
+
+.nav-logo {
+  margin: 1% 0% 1% 5%;
+  height: 7vh;
+}
