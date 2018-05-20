@@ -4,7 +4,6 @@ body {
 }
 
 .nav-sp {
-  /* height: 10vh; */
   background-color: rgba(0,0,0,.6)
 }
 
@@ -12,3 +11,24 @@ body {
   margin: 1% 0% 1% 5%;
   height: 7vh;
 }
+
+ .fa-github {
+  font-size: 40px;
+  padding: 10px;
+  background-color: rgb(37,64,143);
+  color: rgb(217,195,69);
+  position: fixed;
+  right: 2%;
+  top: 40%;
+}
+
+.fa-linkedin {
+  font-size: 40px;
+  padding: 10px;
+  background-color: rgb(37,64,143);
+  color: rgb(217,195,69);
+  position: fixed;
+  right: 2%;
+  top: 50%;
+}
+
