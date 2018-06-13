@@ -1,10 +1,15 @@
 body {
 	background: url("../images/sf-fog.gif") no-repeat fixed center ;
-	background-size: cover;
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a:hover {
   text-decoration: none;
+}
+
+a {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .nav-sp {
@@ -13,7 +18,7 @@ a:hover {
 
 .nav-logo {
   margin: 8% 0% 8% 0%;
-  height: 7vh;
+  height: 60px;
 }
 
 .local-link-nav {
@@ -26,7 +31,7 @@ a:hover {
 }
 
  .fa-github {
-  font-size: 30px;
+  font-size: 31px;
   padding: 10px;
   background-color: rgb(37,64,143);
   color: rgb(217,195,69);
@@ -35,7 +40,7 @@ a:hover {
 }
 
 .fa-linkedin {
-  font-size: 30px;
+  font-size: 31px;
   padding: 10px;
   background-color: rgb(37,64,143);
   color: rgb(217,195,69);
@@ -52,12 +57,26 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
+
 @keyframes pulse {
   50% {
       transform: scale(1.1) translateY(-10%);
   }
 }
 
+.top-space {
+  margin-top: 70px;
+}
+
+/* Portfolio */
+.portfolio-img {
+  width: 175px;
+  height: 175px;
+  border-radius: 8px;
+}
+
+
 @media screen and (max-width: 980px) {
 
 }
+
