@@ -40,6 +40,30 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1); } }
 
+@-webkit-keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0%; }
+  50% {
+    background-position: 50%; }
+  100% {
+    background-position: 100%; } }
+
 /* Reset CSS for cross-browser compatibility */
 *,
 *::after,
@@ -161,15 +185,19 @@ body {
       color: transparent;
       letter-spacing: 2.3rem;
       margin-top: 2rem;
-      margin-bottom: 7rem; }
+      margin-bottom: 5rem;
+      -webkit-animation: backgroundMove 1s ease infinite;
+      -moz-animation: backgroundMove 1s ease infinite;
+      animation: backgroundMove 1s ease infinite; }
     .header__heading--sub {
       text-transform: uppercase;
       font-size: 3.8rem;
       background-image: linear-gradient(to left, #ED9415, #693AA8);
+      background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
       letter-spacing: 2.1rem;
-      margin-top: 11rem; }
+      margin-top: 13rem; }
   .header__portrait {
     height: 22rem;
     width: 22rem;

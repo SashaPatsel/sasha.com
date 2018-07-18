@@ -23,7 +23,11 @@
         // position: absolute;
         // top: 2%;
         margin-top: 2rem; 
-        margin-bottom: 7rem;
+        margin-bottom: 5rem;
+
+        -webkit-animation: backgroundMove 1s ease infinite;
+        -moz-animation: backgroundMove 1s ease infinite;
+        animation: backgroundMove 1s ease infinite;
 
       }
 
@@ -32,10 +36,11 @@
         text-transform: uppercase;
         font-size: 3.8rem;
         background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
+        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 2.1rem;
-        margin-top: 11rem;
+        margin-top: 13rem;
 
       }
   }
@@ -62,5 +67,6 @@
 
   }
 }
+
 
 
