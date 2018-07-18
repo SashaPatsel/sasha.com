@@ -15,19 +15,15 @@
       &--main {
         text-transform: uppercase;
         font-size: 7rem;
-        background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
+        background: linear-gradient(to left, $color-secondary, $color-primary-light);
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 2.3rem;
 
-        // position: absolute;
-        // top: 2%;
         margin-top: 2rem; 
         margin-bottom: 5rem;
 
-        -webkit-animation: backgroundMove 1s ease infinite;
-        -moz-animation: backgroundMove 1s ease infinite;
-        animation: backgroundMove 1s ease infinite;
+        animation: growFromCenter 2s ease;
 
       }
 
@@ -41,7 +37,11 @@
         color: transparent;
         letter-spacing: 2.1rem;
         margin-top: 13rem;
-
+        animation: growFromCenter 2s ease;
+        animation-delay: .5s;
+        opacity: 0;
+        //keep state at 100% of animation
+        animation-fill-mode: forwards;
       }
   }
 
@@ -57,7 +57,10 @@
 
     margin: auto;
     display: block;
-
+    opacity: 0;
+    animation: spinIn 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
     // position: absolute;
     // top: 70%;
     // left: 50%;

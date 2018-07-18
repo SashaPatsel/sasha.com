@@ -29,16 +29,17 @@
 @keyframes growFromCenter {
   0% {
     opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1); }
+    transform: scale(0.1); }
   100% {
     opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1); } }
+    transform: scale(1); } }
+
+@keyframes spinIn {
+  0% {
+    transform: rotate(0deg) scale(0.1); }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1; } }
 
 @-webkit-keyframes backgroundMove {
   0% {
@@ -58,11 +59,11 @@
 
 @keyframes backgroundMove {
   0% {
-    background-position: 0%; }
+    background-position: 0% 50%; }
   50% {
-    background-position: 50%; }
+    background-position: 100% 50%; }
   100% {
-    background-position: 100%; } }
+    background-position: 0% 50%; } }
 
 /* Reset CSS for cross-browser compatibility */
 *,
@@ -180,15 +181,13 @@ body {
     .header__heading--main {
       text-transform: uppercase;
       font-size: 7rem;
-      background-image: linear-gradient(to left, #ED9415, #693AA8);
+      background: linear-gradient(to left, #ED9415, #693AA8);
       -webkit-background-clip: text;
       color: transparent;
       letter-spacing: 2.3rem;
       margin-top: 2rem;
       margin-bottom: 5rem;
-      -webkit-animation: backgroundMove 1s ease infinite;
-      -moz-animation: backgroundMove 1s ease infinite;
-      animation: backgroundMove 1s ease infinite; }
+      animation: growFromCenter 2s ease; }
     .header__heading--sub {
       text-transform: uppercase;
       font-size: 3.8rem;
@@ -197,7 +196,11 @@ body {
       -webkit-background-clip: text;
       color: transparent;
       letter-spacing: 2.1rem;
-      margin-top: 13rem; }
+      margin-top: 13rem;
+      animation: growFromCenter 2s ease;
+      animation-delay: .5s;
+      opacity: 0;
+      animation-fill-mode: forwards; }
   .header__portrait {
     height: 22rem;
     width: 22rem;
@@ -206,4 +209,8 @@ body {
     border: solid white 3px;
     background-image: linear-gradient(to top, rgba(84, 27, 161, 0.7), rgba(237, 148, 21, 0.7));
     margin: auto;
-    display: block; }
+    display: block;
+    opacity: 0;
+    animation: spinIn 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards; }
