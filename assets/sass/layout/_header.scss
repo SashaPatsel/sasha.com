@@ -1,0 +1,61 @@
+.header {
+  background-image: url("../images/sf-fog.gif");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative;
+  &__heading {
+
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+
+
+      &--main {
+        text-transform: uppercase;
+        font-size: 7rem;
+        background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2.3rem;
+        margin-bottom: 20rem; 
+
+      }
+
+      &--sub {
+
+        text-transform: uppercase;
+        font-size: 3.8rem;
+        background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2.1rem;
+        margin-top: 2rem;
+      }
+  }
+
+  &__portrait {
+    height: 22rem;
+    width: 22rem;
+    object-fit: cover;
+    
+
+    border-radius: 200px;
+    border: solid white 3px;
+    background-image: linear-gradient(to top, rgba($color-primary, .7), rgba($color-secondary, .7));
+
+    margin: auto;
+    display: block;
+
+    // position: absolute;
+    // top: 35%;
+    // left: 20%;
+    // transform: translate(-20%,-35%);
+    // z-index: 3;
+    
+
+  }
+}
+
+

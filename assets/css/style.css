@@ -26,6 +26,20 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes growFromCenter {
+  0% {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1); }
+  100% {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); } }
+
 /* Reset CSS for cross-browser compatibility */
 *,
 *::after,
@@ -45,15 +59,19 @@ body {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   font-weight: 400px;
   line-height: 1.7; }
 
+@font-face {
+  font-family: hp;
+  src: url("../ParryHotter.ttf"); }
+
 .nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   height: 8rem;
-  background-color: #094074;
   width: 100%;
   color: white; }
   .nav__logo-box {
@@ -93,7 +111,7 @@ body {
       .nav ul li:hover {
         top: 40%;
         text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
-        color: #087CA7; }
+        color: #ED9415; }
       .nav ul li:not(:last-child) {
         padding: 0 1rem;
         border-right: solid white 2px; }
@@ -123,3 +141,40 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  background-image: url("../images/sf-fog.gif");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative; }
+  .header__heading {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%); }
+    .header__heading--main {
+      text-transform: uppercase;
+      font-size: 7rem;
+      background-image: linear-gradient(to left, #ED9415, #693AA8);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 2.3rem;
+      margin-bottom: 20rem; }
+    .header__heading--sub {
+      text-transform: uppercase;
+      font-size: 3.8rem;
+      background-image: linear-gradient(to left, #ED9415, #693AA8);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 2.1rem;
+      margin-top: 2rem; }
+  .header__portrait {
+    height: 22rem;
+    width: 22rem;
+    object-fit: cover;
+    border-radius: 200px;
+    border: solid white 3px;
+    background-image: linear-gradient(to top, rgba(84, 27, 161, 0.7), rgba(237, 148, 21, 0.7));
+    margin: auto;
+    display: block; }

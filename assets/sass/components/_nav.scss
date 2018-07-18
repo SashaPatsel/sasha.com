@@ -1,8 +1,9 @@
 .nav {
   position: fixed;
+  z-index: 2;
   top: 0;
   height: 8rem;
-  background-color: $color-primary-dark;
+  // background-color: $color-primary-dark;
   width: 100%;
   color: white;
 
@@ -60,7 +61,7 @@
       &:hover {
         top: 40%;
         text-shadow: 0 1rem 4rem rgba(0,0,0,.6);
-        color: $color-primary;
+        color: $color-secondary;
       }
 
       &:not(:last-child) {
