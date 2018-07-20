@@ -1,0 +1,98 @@
+.header {
+  background-image: url("../images/sf-fog.gif");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative;
+  &__heading {
+
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%);
+
+
+      &--main {
+        text-transform: uppercase;
+        font-size: 7rem;
+        background: linear-gradient(to left, $color-secondary, $color-primary-light);
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2.3rem;
+
+        margin-top: 2rem; 
+        margin-bottom: 5rem;
+
+        animation: growFromCenter 2s ease;
+
+      }
+
+      &--sub {
+
+        text-transform: uppercase;
+        font-size: 3.8rem;
+        background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 2.1rem;
+        margin-top: 13rem;
+        animation: growFromCenter 2s ease;
+        animation-delay: .5s;
+        opacity: 0;
+        //keep state at 100% of animation
+        animation-fill-mode: forwards;
+      }
+  }
+
+  &__portrait {
+    height: 22rem;
+    width: 22rem;
+    object-fit: cover;
+    
+
+    border-radius: 200px;
+    border: solid white 3px;
+    background-image: linear-gradient(to top, rgba($color-primary, .7), rgba($color-secondary, .7));
+
+    margin: auto;
+    display: block;
+    // opacity: 0;
+    // animation: spinIn 2s;
+    // animation-delay: 1.5s;
+    // animation-fill-mode: forwards;
+    // position: absolute;
+    // top: 70%;
+    // left: 50%;
+    // transform: translate(-50%,-70%);
+    // z-index: 3;
+    
+
+  }
+
+  &__scroll {
+    color: white;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid white 2px;
+    border-radius: 30px;
+    padding: 12px 5px 5px 5px;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    // transition: .3s ease-in;
+  
+    &:hover {
+      background: linear-gradient(to bottom, $color-secondary, $color-primary-light);
+      color: black;
+    }
+  }
+}
+
+
+
+
+

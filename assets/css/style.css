@@ -1,0 +1,247 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes growFromCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.1); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes spinIn {
+  0% {
+    transform: rotate(0deg) scale(0.1); }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+/* Reset CSS for cross-browser compatibility */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* allows other elements to inherit box-sizing specified in body */
+  box-sizing: inherit; }
+
+html {
+  /* this makes it a lot easier to calcute rem. 62.5 is 10/16 so our defualt fontsize is relative to user settings. defines what 1 rem is */
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+
+body {
+  /* makes it so that padding and width don't add to total size of element. i.e. height and width will now extend to define other parts of the box model */
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  font-weight: 400px;
+  line-height: 1.7; }
+
+@font-face {
+  font-family: hp;
+  src: url("../ParryHotter.ttf"); }
+
+.nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  height: 8rem;
+  width: 100%;
+  color: #ED9415; }
+  .nav__logo-box {
+    position: relative;
+    top: .5rem;
+    left: 2rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 100%;
+    background: #2d50a3;
+    display: inline-block; }
+  .nav__logo {
+    height: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.4rem;
+    z-index: 2; }
+  .nav__logo-wrap {
+    height: 4.7rem;
+    width: 3.9rem;
+    background-image: linear-gradient(to left, #ED9415, #693AA8);
+    position: absolute;
+    z-index: 0;
+    top: 1rem;
+    left: 1.5rem; }
+  .nav__links, .nav:link, .nav:visited {
+    text-decoration: none;
+    color: inherit; }
+  .nav ul {
+    position: absolute;
+    right: 2rem;
+    font-size: 2.6rem;
+    top: 50%;
+    transform: translate(0, -50%); }
+    .nav ul li {
+      display: inline; }
+      .nav ul li:hover {
+        top: 40%;
+        text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
+        color: white; }
+      .nav ul li:not(:last-child) {
+        padding: 0 1rem;
+        border-right: solid white 2px; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  background-image: url("../images/sf-fog.gif");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  position: relative; }
+  .header__heading {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -20%); }
+    .header__heading--main {
+      text-transform: uppercase;
+      font-size: 7rem;
+      background: linear-gradient(to left, #ED9415, #693AA8);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 2.3rem;
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+      animation: growFromCenter 2s ease; }
+    .header__heading--sub {
+      text-transform: uppercase;
+      font-size: 3.8rem;
+      background-image: linear-gradient(to left, #ED9415, #693AA8);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 2.1rem;
+      margin-top: 13rem;
+      animation: growFromCenter 2s ease;
+      animation-delay: .5s;
+      opacity: 0;
+      animation-fill-mode: forwards; }
+  .header__portrait {
+    height: 22rem;
+    width: 22rem;
+    object-fit: cover;
+    border-radius: 200px;
+    border: solid white 3px;
+    background-image: linear-gradient(to top, rgba(84, 27, 161, 0.7), rgba(237, 148, 21, 0.7));
+    margin: auto;
+    display: block; }
+  .header__scroll {
+    color: white;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid white 2px;
+    border-radius: 30px;
+    padding: 12px 5px 5px 5px;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    text-align: center; }
+    .header__scroll:hover {
+      background: linear-gradient(to bottom, #ED9415, #693AA8);
+      color: black; }
+
+.portfolio {
+  position: relative;
+  height: 100vh;
+  width: 100%; }
+  .portfolio__heading {
+    display: inline-block;
+    font-size: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to left, #ED9415, #541BA1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
