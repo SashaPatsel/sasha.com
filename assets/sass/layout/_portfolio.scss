@@ -1,4 +1,13 @@
+.transition {
+  height: 15rem;
+  background-image: linear-gradient(to bottom, #1a6dbb,
+   white);
+   margin-top: -8rem;
+  //  background-origin: 0%;
+  // transform: translateY(-10rem);
+  // background-position: 0 -50%;
 
+}
 
 .portfolio {
   position: relative;
@@ -12,7 +21,7 @@
     font-size: 5rem;
     margin: 0 auto;
     text-align: center;
-    // padding-top: 4rem;
+    // padding-top: 2rem;
     background-image: linear-gradient(to left, $color-secondary, $color-primary);
     background-clip: text;
     -webkit-background-clip: text;

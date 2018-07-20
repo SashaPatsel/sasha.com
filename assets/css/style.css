@@ -227,6 +227,11 @@ body {
       background: linear-gradient(to bottom, #ED9415, #693AA8);
       color: black; }
 
+.transition {
+  height: 15rem;
+  background-image: linear-gradient(to bottom, #1a6dbb, white);
+  margin-top: -8rem; }
+
 .portfolio {
   position: relative;
   height: 100vh;
