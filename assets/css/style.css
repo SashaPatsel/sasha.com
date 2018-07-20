@@ -98,7 +98,7 @@ body {
   top: 0;
   height: 8rem;
   width: 100%;
-  color: white; }
+  color: #ED9415; }
   .nav__logo-box {
     position: relative;
     top: .5rem;
@@ -117,7 +117,7 @@ body {
   .nav__logo-wrap {
     height: 4.7rem;
     width: 3.9rem;
-    background: white;
+    background-image: linear-gradient(to left, #ED9415, #693AA8);
     position: absolute;
     z-index: 0;
     top: 1rem;
@@ -136,7 +136,7 @@ body {
       .nav ul li:hover {
         top: 40%;
         text-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.6);
-        color: #ED9415; }
+        color: white; }
       .nav ul li:not(:last-child) {
         padding: 0 1rem;
         border-right: solid white 2px; }
@@ -209,8 +209,39 @@ body {
     border: solid white 3px;
     background-image: linear-gradient(to top, rgba(84, 27, 161, 0.7), rgba(237, 148, 21, 0.7));
     margin: auto;
-    display: block;
-    opacity: 0;
-    animation: spinIn 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards; }
+    display: block; }
+  .header__scroll {
+    color: white;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid white 2px;
+    border-radius: 30px;
+    padding: 12px 5px 5px 5px;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    text-align: center; }
+    .header__scroll:hover {
+      background: linear-gradient(to bottom, #ED9415, #693AA8);
+      color: black; }
+
+.portfolio {
+  position: relative;
+  height: 100vh;
+  width: 100%; }
+  .portfolio__heading {
+    display: inline-block;
+    font-size: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(to left, #ED9415, #541BA1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }

@@ -57,10 +57,10 @@
 
     margin: auto;
     display: block;
-    opacity: 0;
-    animation: spinIn 2s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
+    // opacity: 0;
+    // animation: spinIn 2s;
+    // animation-delay: 1.5s;
+    // animation-fill-mode: forwards;
     // position: absolute;
     // top: 70%;
     // left: 50%;
@@ -69,7 +69,30 @@
     
 
   }
+
+  &__scroll {
+    color: white;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translate(-50%);
+    border: solid white 2px;
+    border-radius: 30px;
+    padding: 12px 5px 5px 5px;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    // transition: .3s ease-in;
+  
+    &:hover {
+      background: linear-gradient(to bottom, $color-secondary, $color-primary-light);
+      color: black;
+    }
+  }
 }
+
+
 
 
 

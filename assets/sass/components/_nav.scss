@@ -3,14 +3,10 @@
   z-index: 2;
   top: 0;
   height: 8rem;
-  // background-color: $color-primary-dark;
   width: 100%;
-  color: white;
+  color: $color-secondary;
 
-  // &__logo {
-  //   height: 3rem;
-  //   width: auto;
-  // }
+
 
   &__logo-box {
     position: relative;
@@ -34,7 +30,8 @@
   &__logo-wrap {
     height: 4.7rem;
     width: 3.9rem;
-    background: white;
+    // background: white;
+    background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
     position: absolute;
     z-index: 0;
     top: 1rem;
@@ -61,7 +58,7 @@
       &:hover {
         top: 40%;
         text-shadow: 0 1rem 4rem rgba(0,0,0,.6);
-        color: $color-secondary;
+        color: white;
       }
 
       &:not(:last-child) {
