@@ -28,7 +28,7 @@
           transform: rotateY(180deg);
 
           &-1 {
-            background-image: linear-gradient(to right bottom, red, orange);
+            background-image: linear-gradient(to right bottom, #1282A2, #1282A2);
           }
 
           &-2 {
@@ -55,8 +55,8 @@
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     //This one is f***in' awesome but doesn't quite fit here;
@@ -64,7 +64,7 @@
 
     &--1 {
       //image located relative to style.css (that's where the code's being compiled)
-      background-image: linear-gradient(to right bottom, red, orange);
+      background-image: linear-gradient(to right bottom, #1282A2, #1282A2);
     }
 
     &--2 {
@@ -74,6 +74,21 @@
     &--3 {
       background-image: linear-gradient(to right bottom, purple, violet);
     }
+
+    &--4 {
+
+      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/demo.gif");
+    }
+
+    &--5 {
+      background-image: linear-gradient(to right bottom, blue, cyan) ;
+    }
+
+
+    &--6 {
+      background-image: linear-gradient(to right bottom, blue, cyan) ;
+    }
+
 
   }
 
@@ -85,7 +100,7 @@
     text-align: right;
     position: absolute;
     top: 12rem;
-    right: 2rem;
+    right: 3rem;
     width: 45%;
   }
 
@@ -96,8 +111,8 @@
     padding: 1rem 1.5rem;
 
     &--1 {
-      background-image: linear-gradient(to right bottom,  rgba(red, .85), 
-        rgba(orange, .85));
+      background-image: linear-gradient(to right bottom,  rgba(#055197, .85), 
+        rgba(#1282A2, .85));
     }
 
     &--2 { 
@@ -113,7 +128,12 @@
   }
 
   &__details {
-    padding: 3rem;
+    padding: 2rem;
+
+    &--stack {
+      text-align: center;
+      font-size: 3rem;
+    }
 
     ul {
       list-style: none;
@@ -130,31 +150,16 @@
         }
       }
     }
+
   }
 
   //BACK-SIDE STYLING
-  &__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  &__readme {
     width: 90%;
     text-align: center;
-  }
-
-  &__price-box {
     color: white;
-    margin-bottom: 8rem;
-
+    padding: 1rem;
+    font-size: 1.5rem;
   }
 
-  &__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-  }
-
-  &__price-value {
-    font-size: 6rem;
-    font-weight: 100;
-  }
 }

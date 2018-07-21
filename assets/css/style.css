@@ -163,7 +163,7 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, red, orange); }
+        background-image: linear-gradient(to right bottom, #1282A2, #1282A2); }
       .card__side--back-2 {
         background-image: linear-gradient(to right bottom, blue, cyan); }
       .card__side--back-3 {
@@ -176,16 +176,20 @@ body {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, red, orange); }
+      background-image: linear-gradient(to right bottom, #1282A2, #1282A2); }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, blue, cyan); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, purple, violet); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/demo.gif"); }
+    .card__picture--5 {
+      background-image: linear-gradient(to right bottom, blue, cyan); }
+    .card__picture--6 {
+      background-image: linear-gradient(to right bottom, blue, cyan); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -194,7 +198,7 @@ body {
     text-align: right;
     position: absolute;
     top: 12rem;
-    right: 2rem;
+    right: 3rem;
     width: 45%; }
   .card__heading-span {
     padding: 1rem 1.5rem;
@@ -202,13 +206,16 @@ body {
     box-decoration-break: clone;
     padding: 1rem 1.5rem; }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.85), rgba(255, 165, 0, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(5, 81, 151, 0.85), rgba(18, 130, 162, 0.85)); }
     .card__heading-span--2 {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.85), rgba(0, 255, 255, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(128, 0, 128, 0.85), rgba(238, 130, 238, 0.85)); }
   .card__details {
-    padding: 3rem; }
+    padding: 2rem; }
+    .card__details--stack {
+      text-align: center;
+      font-size: 3rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -219,22 +226,12 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #c8c8c8; }
-  .card__cta {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .card__readme {
     width: 90%;
-    text-align: center; }
-  .card__price-box {
+    text-align: center;
     color: white;
-    margin-bottom: 8rem; }
-  .card__price-only {
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-  .card__price-value {
-    font-size: 6rem;
-    font-weight: 100; }
+    padding: 1rem;
+    font-size: 1.5rem; }
 
 .row {
   max-width: 114rem;
@@ -329,7 +326,7 @@ body {
 
 .portfolio {
   position: relative;
-  height: 100vh;
+  height: 200vh;
   width: 100%; }
   .portfolio__heading {
     display: inline-block;
