@@ -64,7 +64,8 @@
 
     &--1 {
       //image located relative to style.css (that's where the code's being compiled)
-      background-image: linear-gradient(to right bottom, #1282A2, #1282A2);
+      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/seatswap-demo.png");
+      background-position-x: 40%;
     }
 
     &--2 {
@@ -73,6 +74,7 @@
 
     &--3 {
       background-image: linear-gradient(to right bottom, purple, violet);
+
     }
 
     &--4 {
@@ -81,7 +83,8 @@
     }
 
     &--5 {
-      background-image: linear-gradient(to right bottom, blue, cyan) ;
+      background-image:  url("../images/hq-demo.png") ;
+      
     }
 
 
