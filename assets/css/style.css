@@ -214,11 +214,13 @@ body {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.85), rgba(0, 255, 255, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(128, 0, 128, 0.85), rgba(238, 130, 238, 0.85)); }
+  .card__about {
+    padding: 2rem; }
+    .card__about--name {
+      font-size: 2rem;
+      text-align: center; }
   .card__details {
     padding: 2rem; }
-    .card__details--stack {
-      text-align: center;
-      font-size: 3rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -229,12 +231,6 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #c8c8c8; }
-  .card__readme {
-    width: 90%;
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    font-size: 1.5rem; }
 
 .about {
   height: 200vh;
