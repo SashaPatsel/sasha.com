@@ -1,11 +1,11 @@
 .footer {
   height: 70vh;
   width: 100vw;
-  margin-top: 10rem;
+  margin-top: 8rem;
 
   &__logo-box {
     text-align: center;
-    margin-bottom: 8rem;
+    margin-top: 8rem;
 
        
     position: relative;
@@ -30,11 +30,21 @@
   &__logo-wrap {
     height: 60%;
     width: 48%;
-    background: white;
+    background-image: linear-gradient(to left, $color-secondary, $color-primary-light);
     position: absolute;
     z-index: 0;
     top: 4rem;
     left: 26%;
+  }
+
+  &__hire-status {
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: .8rem;
+    background: linear-gradient(to left, $color-secondary, $color-primary-light);
+    -webkit-background-clip: text;
+    color: transparent;
   }
   
 }
