@@ -235,7 +235,7 @@ body {
     font-size: 1.5rem; }
 
 .about {
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
   background-image: linear-gradient(to bottom left, #541BA1, #ED9415);
   background-size: cover;
@@ -244,26 +244,35 @@ body {
   position: relative; }
   .about > * {
     transform: skewY(-5deg); }
-  .about__heading--main {
-    font-size: 5rem;
+  .about__heading-main {
+    font-size: 7rem;
     text-align: center;
     color: white;
-    letter-spacing: 2rem;
+    letter-spacing: 4rem;
     text-transform: uppercase;
-    position: relative;
-    left: 50%;
-    top: 4.5rem;
-    transform: translateX(-50%) skewY(-5deg);
+    transform: translateY(2rem) skewY(-5deg);
     z-index: 4; }
+  .about__heading-sub--1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 5rem; }
+  .about__heading-sub--2 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 5rem; }
   .about__blrb {
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) skewY(-5deg);
+    transform: skewY(-5deg);
     width: 50%;
     font-size: 1.8rem;
-    line-height: 1.8; }
+    line-height: 1.8;
+    margin: 2rem auto; }
     .about__blrb p:not(:last-child) {
       margin-bottom: 1rem; }
 
