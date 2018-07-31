@@ -60,6 +60,14 @@
 
   &__links {
     margin-top: 3rem;
+  
+    &-item {
+      transition: .2s;
+    }
+
+    &-item:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__email {
@@ -81,5 +89,7 @@
     height: 20rem;
     width: 20rem;
   }
+
+
   
 }

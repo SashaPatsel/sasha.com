@@ -326,6 +326,10 @@ body {
     margin: 4rem 0; }
   .footer__links {
     margin-top: 3rem; }
+    .footer__links-item {
+      transition: .2s; }
+    .footer__links-item:hover {
+      transform: scale(1.2); }
   .footer__email {
     font-size: 1.5rem;
     height: 20rem;
