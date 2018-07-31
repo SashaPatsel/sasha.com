@@ -307,7 +307,7 @@ body {
     z-index: 0;
     top: 4rem;
     left: 26%; }
-  .footer__hire-status {
+  .footer__heading--main {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
@@ -315,6 +315,33 @@ body {
     background: linear-gradient(to left, #ED9415, #693AA8);
     -webkit-background-clip: text;
     color: transparent; }
+  .footer__heading--sub {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .5rem;
+    background: linear-gradient(to left, #ED9415, #693AA8);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 4rem 0; }
+  .footer__links {
+    margin-top: 3rem; }
+  .footer__email {
+    font-size: 1.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    background-image: radial-gradient(#ED9415, #541BA1);
+    position: relative; }
+    .footer__email-content {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .footer__img {
+    height: 20rem;
+    width: 20rem; }
 
 .row {
   max-width: 114rem;
