@@ -277,6 +277,35 @@ body {
     .about__blrb p:not(:last-child) {
       margin-bottom: 1rem; }
 
+.footer {
+  height: 70vh;
+  width: 100vw;
+  margin-top: 10rem; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 100%;
+    background: #2d50a3; }
+  .footer__logo {
+    width: 10rem;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    top: 20%; }
+  .footer__logo-wrap {
+    height: 60%;
+    width: 48%;
+    background: white;
+    position: absolute;
+    z-index: 0;
+    top: 4rem;
+    left: 26%; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
