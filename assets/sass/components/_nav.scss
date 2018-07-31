@@ -65,6 +65,10 @@
         padding: 0 1rem;
         border-right: solid white 2px;
       }
+
+      &:last-child {
+        margin-left: 1rem;
+      }
     }
   }
 

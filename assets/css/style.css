@@ -140,6 +140,8 @@ body {
       .nav ul li:not(:last-child) {
         padding: 0 1rem;
         border-right: solid white 2px; }
+      .nav ul li:last-child {
+        margin-left: 1rem; }
 
 .card {
   perspective: 150rem;
