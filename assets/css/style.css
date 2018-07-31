@@ -184,7 +184,7 @@ body {
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, blue, cyan); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, purple, violet); }
+      background-image: url("../images/bamazon-demo.gif"); }
     .card__picture--4 {
       background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/demo.gif"); }
     .card__picture--5 {
@@ -244,7 +244,7 @@ body {
   position: relative; }
   .about > * {
     transform: skewY(-5deg); }
-  .about__heading {
+  .about__heading--main {
     font-size: 5rem;
     text-align: center;
     color: white;

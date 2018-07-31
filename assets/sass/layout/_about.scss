@@ -13,22 +13,19 @@
     transform: skewY(-5deg);
   }
 
-  &__heading {
-    // display: inline-block;
+  &__heading--main {
+
     font-size: 5rem;
-    // margin: 1rem auto;
     text-align: center;
     color: white;
     letter-spacing: 2rem;
-
     text-transform: uppercase;
-
     position: relative;
     left: 50%;
     top: 4.5rem;
     transform: translateX(-50%) skewY(-5deg);
     z-index: 4;
-    // font-family: hp;
+
   }
 
   &__blrb {
