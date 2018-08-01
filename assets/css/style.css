@@ -165,11 +165,11 @@ body {
     .card__side--back {
       transform: rotateY(180deg); }
       .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #1282A2, #1282A2); }
+        background-image: linear-gradient(to right bottom, #541BA1, #ED9415); }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, blue, cyan); }
+        background-image: linear-gradient(to right bottom, #541BA1, #ED9415); }
       .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, purple, violet); }
+        background-image: linear-gradient(to right bottom, #541BA1, #ED9415); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -220,7 +220,17 @@ body {
       font-size: 2rem;
       text-align: center; }
   .card__details {
-    padding: 2rem; }
+    padding: 2rem;
+    color: white; }
+    .card__details--stack {
+      font-size: 2rem;
+      text-align: center; }
+    .card__details--logo {
+      height: 5rem;
+      width: 5rem;
+      transform: translateY(-25%);
+      position: absolute;
+      left: 0; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -228,7 +238,8 @@ body {
       .card__details ul li {
         text-align: center;
         font-size: 1.5rem;
-        padding: 1rem; }
+        padding: 1.5rem;
+        position: relative; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #c8c8c8; }
 
