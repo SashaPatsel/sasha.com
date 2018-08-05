@@ -200,18 +200,17 @@ body {
   .card__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/seatswap-demo.png");
+      background-image: url("../images/seatswap-demo.png");
       background-position-x: 40%; }
     .card__picture--2 {
       background-image: linear-gradient(to right bottom, blue, cyan); }
     .card__picture--3 {
       background-image: url("../images/bamazon-demo.gif"); }
     .card__picture--4 {
-      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/demo.gif"); }
+      background-image: url("../images/demo.gif"); }
     .card__picture--5 {
       background-image: url("../images/hq-demo.png"); }
     .card__picture--6 {

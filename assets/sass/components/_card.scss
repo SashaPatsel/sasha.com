@@ -54,17 +54,13 @@
   &__picture {
     background-size: cover;
     height: 23rem;
-    background-blend-mode: screen;
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    //This one is f***in' awesome but doesn't quite fit here;
-    // background-blend-mode: color-burn;
+
 
     &--1 {
       //image located relative to style.css (that's where the code's being compiled)
-      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/seatswap-demo.png");
+      background-image:  url("../images/seatswap-demo.png");
       background-position-x: 40%;
     }
 
@@ -79,7 +75,7 @@
 
     &--4 {
 
-      background-image: linear-gradient(to right bottom, #1282A2, #1282A2), url("../images/demo.gif");
+      background-image:  url("../images/demo.gif");
     }
 
     &--5 {
