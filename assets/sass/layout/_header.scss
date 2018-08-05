@@ -4,6 +4,7 @@
   background-position: top;
   height: 100vh ;
   position: relative;
+
   &__heading {
 
     position: absolute;
@@ -36,7 +37,7 @@
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 2.1rem;
-        margin-top: 13rem;
+        margin-top: 40rem;
         animation: growFromCenter 2s ease;
         animation-delay: .5s;
         opacity: 0;
@@ -45,21 +46,8 @@
       }
   }
 
-  &__portrait {
-    height: 22rem;
-    width: 22rem;
-    object-fit: cover;
-    
 
-    border-radius: 200px;
-    border: solid white 3px;
-    background-image: linear-gradient(to top, rgba($color-primary, .7), rgba($color-secondary, .7));
 
-    margin: auto;
-    display: block;
-    
-
-  }
 
   &__scroll {
     color: white;

@@ -134,8 +134,12 @@
     padding: 2rem;
 
     &--name {
-      font-size: 2rem;
+      font-size: 2.5rem;
       text-align: center
+    }
+
+    &--desc {
+      font-size: 1.2rem;
     }
   }
 
@@ -146,8 +150,11 @@
     color: white;
 
     &--stack {
-      font-size: 2rem;
+      font-size: 3rem;
       text-align: center;
+      letter-spacing: .5rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
     }
 
     &--logo {
@@ -174,6 +181,23 @@
           border-bottom: 1px solid rgb(200,200,200);
         }
       }
+    }
+
+    &--gh {
+      position: absolute;
+      bottom: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &-img {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      &-img:hover {
+        transform: scale(1.1);
+      }
+
     }
 
   }
