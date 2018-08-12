@@ -384,7 +384,9 @@ body {
     width: 20rem;
     border-radius: 100%;
     background-image: radial-gradient(#ED9415, #541BA1);
-    position: relative; }
+    position: relative;
+    margin: 0 auto;
+    display: block; }
     .footer__email-content {
       color: white;
       position: absolute;
@@ -393,7 +395,9 @@ body {
       transform: translate(-50%, -50%); }
   .footer__img {
     height: 20rem;
-    width: 20rem; }
+    width: 20rem;
+    margin: 0 auto;
+    display: block; }
 
 .row {
   max-width: 114rem;

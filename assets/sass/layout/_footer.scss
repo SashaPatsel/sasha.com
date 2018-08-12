@@ -68,6 +68,8 @@
     &-item:hover {
       transform: scale(1.2);
     }
+
+
   }
 
   &__email {
@@ -77,6 +79,8 @@
     border-radius: 100%;
     background-image: radial-gradient($color-secondary, $color-primary);
     position: relative;
+    margin: 0 auto;
+    display: block;
 
     &-content {
       color: white;
@@ -88,6 +92,8 @@
   &__img {
     height: 20rem;
     width: 20rem;
+    margin: 0 auto;
+    display: block;
   }
 
 
