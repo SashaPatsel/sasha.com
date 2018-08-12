@@ -100,7 +100,7 @@ html {
       font-size: 56.25%; } }
   @media (max-width: 56.25em) {
     html {
-      font-size: 50%; } }
+      font-size: 45%; } }
 
 body {
   /* makes it so that padding and width don't add to total size of element. i.e. height and width will now extend to define other parts of the box model */
@@ -214,7 +214,7 @@ body {
     .card__picture--5 {
       background-image: url("../images/hq-demo.png"); }
     .card__picture--6 {
-      background-image: linear-gradient(to right bottom, blue, cyan); }
+      background-image: url("../images/ucbx.jpeg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -283,10 +283,7 @@ body {
 .about {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom left, #541BA1, #ED9415);
-  background-size: cover;
-  transform: skewY(5deg);
-  margin-top: -5rem;
-  position: relative; }
+  transform: skewY(5deg); }
   .about > * {
     transform: skewY(-5deg); }
   .about__heading-main {
@@ -448,7 +445,15 @@ body {
     position: absolute;
     left: 50%;
     top: 20%;
-    transform: translate(-50%, -20%); }
+    transform: translate(-50%, -20%);
+    width: 60%;
+    text-align: center; }
+    @media (max-width: 69em) {
+      .header__heading {
+        width: 40%; } }
+    @media (max-width: 650px) {
+      .header__heading {
+        width: 80%; } }
     .header__heading--main {
       text-transform: uppercase;
       font-size: 7rem;
@@ -467,24 +472,27 @@ body {
       -webkit-background-clip: text;
       color: transparent;
       letter-spacing: 2.1rem;
-      margin-top: 40rem;
+      margin-top: 42rem;
       animation: growFromCenter 2s ease;
       animation-delay: .5s;
       opacity: 0;
       animation-fill-mode: forwards; }
+      @media (max-width: 1100px) {
+        .header__heading--sub {
+          margin-top: 30rem; } }
+      @media (max-width: 600px) {
+        .header__heading--sub {
+          margin-top: 10; } }
   .header__scroll {
     color: white;
-    position: absolute;
-    top: 650px;
-    left: 50%;
-    transform: translate(-50%);
     border: solid white 2px;
     border-radius: 30px;
     padding: 12px 5px 5px 5px;
     font-size: 26px;
     width: 55px;
     height: 55px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 2rem; }
     .header__scroll:hover {
       background: linear-gradient(to bottom, #ED9415, #693AA8);
       color: black; }
@@ -495,9 +503,7 @@ body {
   margin-top: -8rem; }
 
 .portfolio {
-  position: relative;
-  height: 200vh;
-  width: 100%; }
+  margin-bottom: 10rem; }
   .portfolio__heading {
     display: inline-block;
     font-size: 5rem;

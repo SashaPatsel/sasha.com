@@ -3,17 +3,14 @@
   background-image: linear-gradient(to bottom, #1a6dbb,
    white);
    margin-top: -8rem;
-  //  background-origin: 0%;
-  // transform: translateY(-10rem);
-  // background-position: 0 -50%;
+
 
 }
 
 .portfolio {
-  position: relative;
-  height: 200vh;
-  width: 100%;
-  // background-color: black;
+
+
+  margin-bottom: 10rem;
 
   &__heading {
     display: inline-block;
@@ -35,20 +32,6 @@
 
   }
 
-  //Looks a little out of place
-  // &__stripe {
-  //   position: absolute;
-  //   top:35%;
-  //   left:-30%;
-  //   z-index: -2;
-
-  //   background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
-
-  //   transform: rotate(-45deg);
-
-  //   height: 10%;
-  //   width: 175%;
-  // }
 }
 
 

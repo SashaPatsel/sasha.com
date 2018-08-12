@@ -27,7 +27,7 @@ html {
   }
 
   @include responsive(t-port) { // width < 900?
-    font-size: 50%; //1rem = 8px 8/16 = 50%
+    font-size: 45%; //1rem = 8px 8/16 = 50%
   }
 
 
