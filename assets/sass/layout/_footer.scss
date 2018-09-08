@@ -42,9 +42,10 @@
     font-size: 3rem;
     text-align: center;
     letter-spacing: .8rem;
-    background: linear-gradient(to left, $color-secondary, $color-primary-light);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
+    // background: linear-gradient(to left, $color-secondary, $color-primary-light);
+    // -webkit-background-clip: text;
+    // color: transparent;
   }
 
   &__heading--sub {
@@ -52,9 +53,10 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: .5rem;
-    background: linear-gradient(to left, $color-secondary, $color-primary-light);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: white;
+    // background: linear-gradient(to left, $color-secondary, $color-primary-light);
+    // -webkit-background-clip: text;
+    // color: transparent;
     margin: 4rem 0;
   }
 
