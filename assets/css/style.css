@@ -164,6 +164,10 @@ body {
       background-image: url("../images/hq-demo.png"); }
     .card__picture--6 {
       background-image: url("../images/ucbx.jpeg"); }
+    .card__picture--11 {
+      background-image: url("../images/rate-a-restaurant.png"); }
+    .card__picture--12 {
+      background-image: url("../images/hogwarts.png"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -191,7 +195,8 @@ body {
       font-size: 2.5rem;
       text-align: center; }
     .card__about--desc {
-      font-size: 1.2rem; }
+      font-size: 1.4rem !important;
+      color: black !important; }
   .card__details {
     padding: 2rem;
     color: white; }
@@ -215,30 +220,43 @@ body {
         text-align: center;
         font-size: 1.5rem;
         padding: 1.5rem;
-        position: relative; }
+        position: relative;
+        text-transform: uppercase; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #c8c8c8; }
-    .card__details--gh {
+    .card__details--icon-gh {
       position: absolute;
       bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%); }
-      .card__details--gh-img {
-        height: 5rem;
-        width: 5rem; }
-      .card__details--gh-img:hover {
-        transform: scale(1.1); }
+      left: 25%;
+      transform: translateX(-25%); }
+    .card__details--icon-hr {
+      position: absolute;
+      bottom: 1rem;
+      left: 75%;
+      transform: translateX(-75%); }
+    .card__details--icon-img {
+      height: 5rem;
+      width: 5rem; }
+    .card__details--icon-img:hover {
+      transform: scale(1.1); }
 
 .jumbotron {
   background-image: linear-gradient(to left, rgba(237, 148, 21, 0.8), rgba(84, 27, 161, 0.8));
   border-radius: 1rem; }
-  .jumbotron__stack--heading {
+  .jumbotron--heading {
     text-align: center;
     color: white;
     font-size: 3.5rem;
     text-transform: uppercase;
     letter-spacing: 1.5rem;
     margin: 1rem 0; }
+    .jumbotron--heading-sub {
+      text-align: center;
+      color: white;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: .8rem;
+      margin: 1rem 0; }
   .jumbotron__stack-container {
     width: 70%;
     margin: auto; }
@@ -286,7 +304,7 @@ body {
       letter-spacing: 1.3px;
       margin-bottom: 2rem; }
     .jumbotron-cd a {
-      color: #1464c0;
+      color: #d87314;
       cursor: pointer;
       text-decoration: none; }
       .jumbotron-cd a:hover {
@@ -410,7 +428,7 @@ body {
     .about__blrb p:not(:last-child) {
       margin-bottom: 4rem; }
     .about__blrb a {
-      color: #1464c0;
+      color: #d87314;
       cursor: pointer;
       text-decoration: none; }
       .about__blrb a:hover {

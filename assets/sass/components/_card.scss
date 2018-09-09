@@ -88,6 +88,14 @@
 
     }
 
+    &--11 {
+      background-image:  url("../images/rate-a-restaurant.png") ;
+    }
+
+    &--12 {
+      background-image:  url("../images/hogwarts.png") ;
+    }
+
 
   }
 
@@ -135,7 +143,8 @@
     }
 
     &--desc {
-      font-size: 1.2rem;
+      font-size: 1.4rem !important;;
+      color: black !important;
     }
   }
 
@@ -172,6 +181,7 @@
         font-size: 1.5rem;
         padding: 1.5rem;
         position: relative;
+        text-transform: uppercase;
 
         &:not(:last-child) {
           border-bottom: 1px solid rgb(200,200,200);
@@ -179,11 +189,21 @@
       }
     }
 
-    &--gh {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
+    &--icon {
+
+      &-gh {
+        position: absolute;
+        bottom: 1rem;
+        left: 25%;
+        transform: translateX(-25%);
+      }
+
+      &-hr {
+        position: absolute;
+        bottom: 1rem;
+        left: 75%;
+        transform: translateX(-75%);
+      }
 
       &-img {
         height: 5rem;
@@ -195,6 +215,11 @@
       }
 
     }
+
+  }
+
+  // SMALL CARDS
+  &-sm {
 
   }
 
