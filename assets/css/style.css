@@ -229,6 +229,75 @@ body {
       .card__details--gh-img:hover {
         transform: scale(1.1); }
 
+.jumbotron {
+  background-image: linear-gradient(to left, rgba(237, 148, 21, 0.8), rgba(84, 27, 161, 0.8));
+  border-radius: 1rem; }
+  .jumbotron__stack--heading {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    margin: 1rem 0; }
+  .jumbotron__stack-container {
+    width: 70%;
+    margin: auto; }
+  .jumbotron__stack--left {
+    width: 45%;
+    display: inline-block; }
+  .jumbotron__stack--right {
+    width: 45%;
+    display: inline-block; }
+  .jumbotron__stack-details {
+    padding: 2rem;
+    color: white;
+    margin: auto;
+    display: block; }
+    .jumbotron__stack-details--stack {
+      font-size: 3rem;
+      text-align: center;
+      letter-spacing: .5rem;
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+    .jumbotron__stack-details--logo {
+      height: 5rem;
+      width: 5rem;
+      transform: translateY(-25%);
+      position: absolute;
+      left: 0; }
+    .jumbotron__stack-details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .jumbotron__stack-details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        position: relative;
+        text-transform: uppercase; }
+        .jumbotron__stack-details ul li:not(:last-child) {
+          margin-bottom: 2rem;
+          border-bottom: 1px solid #c8c8c8; }
+  .jumbotron-cd {
+    padding: 2rem; }
+    .jumbotron-cd p {
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 1.3px;
+      margin-bottom: 2rem; }
+    .jumbotron-cd a {
+      color: #1464c0;
+      cursor: pointer;
+      text-decoration: none; }
+      .jumbotron-cd a:hover {
+        color: #094074; }
+    .jumbotron-cd ul {
+      margin: 0 0 2rem 2rem; }
+    .jumbotron-cd li {
+      color: white;
+      font-size: 2rem;
+      letter-spacing: 1.3px; }
+
 .nav {
   position: fixed;
   z-index: 2;
@@ -346,6 +415,8 @@ body {
       text-decoration: none; }
       .about__blrb a:hover {
         color: #094074; }
+    .about__blrb--sig {
+      text-align: right; }
 
 .footer {
   height: 70vh;
@@ -460,7 +531,8 @@ body {
   background-size: cover;
   background-position: top;
   height: 80rem;
-  position: relative; }
+  position: relative;
+  margin-bottom: 8rem; }
   .header__heading {
     position: absolute;
     left: 50%;
@@ -526,7 +598,7 @@ body {
   margin-bottom: 10rem; }
   .portfolio__heading {
     display: inline-block;
-    font-size: 5rem;
+    font-size: 8rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -540,53 +612,5 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%); }
-  .portfolio__stack {
-    background-image: linear-gradient(to left, rgba(237, 148, 21, 0.8), rgba(84, 27, 161, 0.8));
-    border-radius: 1rem;
-    margin-top: 7rem; }
-    .portfolio__stack--heading {
-      text-align: center;
-      color: white;
-      font-size: 3.5rem;
-      text-transform: uppercase;
-      letter-spacing: 1.5rem;
-      margin: 1rem 0; }
-    .portfolio__stack-container {
-      width: 70%;
-      margin: auto; }
-    .portfolio__stack--left {
-      width: 45%;
-      display: inline-block; }
-    .portfolio__stack--right {
-      width: 45%;
-      display: inline-block; }
-    .portfolio__stack-details {
-      padding: 2rem;
-      color: white;
-      margin: auto;
-      display: block; }
-      .portfolio__stack-details--stack {
-        font-size: 3rem;
-        text-align: center;
-        letter-spacing: .5rem;
-        text-transform: uppercase;
-        margin-bottom: 1rem; }
-      .portfolio__stack-details--logo {
-        height: 5rem;
-        width: 5rem;
-        transform: translateY(-25%);
-        position: absolute;
-        left: 0; }
-      .portfolio__stack-details ul {
-        list-style: none;
-        width: 80%;
-        margin: 0 auto; }
-        .portfolio__stack-details ul li {
-          text-align: center;
-          font-size: 1.5rem;
-          padding: 1.5rem;
-          position: relative;
-          text-transform: uppercase; }
-          .portfolio__stack-details ul li:not(:last-child) {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #c8c8c8; }
+    .portfolio__heading-sub {
+      font-size: 5rem; }

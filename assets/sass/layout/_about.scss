@@ -88,13 +88,17 @@
     }
 
     a {
-        color: rgb(20, 100, 192) ;
+        color: $color-link;
         cursor: pointer;
         text-decoration: none;
 
         &:hover {
           color: rgba($color-primary-dark, 1) ;
         }
+      }
+
+      &--sig {
+        text-align: right;
       }
 
 
