@@ -71,18 +71,34 @@
     color: white;
     transform:  skewY(-5deg);
     width: 50%;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.8;
     margin: 2rem auto;
     line-height: 2.3;
+    letter-spacing: 1.3px;
+
+    text-shadow: 0 1rem 1rem rgba(0,0,0,.4);
      
     p {
 
       &:not(:last-child) {
-        margin-bottom:1rem;
+        margin-bottom:4rem;
       }
 
     }
+
+    a {
+        color: rgb(20, 100, 192) ;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          color: rgba($color-primary-dark, 1) ;
+        }
+      }
+
+
+
   }
 
 
