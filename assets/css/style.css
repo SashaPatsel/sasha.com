@@ -450,7 +450,7 @@ body {
   background-image: url("../images/sf-fog.gif");
   background-size: cover;
   background-position: top;
-  height: 100vh;
+  height: 80rem;
   position: relative; }
   .header__heading {
     position: absolute;
