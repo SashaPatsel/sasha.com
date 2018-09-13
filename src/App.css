@@ -356,16 +356,6 @@ body {
       .nav ul li:last-child {
         margin-left: 1rem; }
 
-.parallax {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: top;
-  background-blend-mode: screen;
-  position: fixed;
-  z-index: -2; }
-
 .about {
   padding: 15rem 0;
   background-image: linear-gradient(to bottom left, #541BA1, #ED9415);

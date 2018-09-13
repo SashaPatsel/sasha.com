@@ -5,16 +5,29 @@ import css from './App.css';
 
 const cards = {
   "1": {
-    "backgroundImage": "assets/images/seatswap-demo.png"
+    background: "assets/images/seatswap-demo.png"
   }
 }
 
-const beach = {
-  "backgroundImage": 'url("../images/beach.jpeg")'
+const parallax = {
+  backgroundImage: 'url("assets/images/beach.jpeg")',
+  position: 'fixed',
+  height: '100vh',
+  width: '100%',
+  backgroundSize: 'cover',
+  backgroundPosition: 'top',
+  backgroundBlendMode: 'screen',
+  position: 'fixed',
+  zIndex: -2
 }
 
 const header = {
-  "backgoundImage": 'url("../images/sf-fog.gif")'
+  backgroundImage: 'url("assets/images/sf-fog.gif")',
+  backgroundSize: 'cover',
+  backgroundPosition: 'top',
+  height: '80rem',
+  position: 'relative',
+  marginBottom: '8rem'
 }
 
 class App extends Component {
@@ -45,7 +58,7 @@ class App extends Component {
             </ul>
   </nav>
 
-          <div style={beach} className="parallax"></div>
+          <div style={parallax} className="parallax"></div>
 
           <section style={header} className="header">
             <div className="header__heading">
