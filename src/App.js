@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import css from './App.css';
+
+const cards = {
+  "1": {
+    "backgroundImage": "assets/images/seatswap-demo.png"
+  }
+}
+
+const beach = {
+  "backgroundImage": 'url("../images/beach.jpeg")'
+}
+
+const header = {
+  "backgoundImage": 'url("../images/sf-fog.gif")'
+}
 
 class App extends Component {
   render() {
@@ -30,9 +45,9 @@ class App extends Component {
             </ul>
   </nav>
 
-          <div className="parallax"></div>
+          <div style={beach} className="parallax"></div>
 
-          <section className="header">
+          <section style={header} className="header">
             <div className="header__heading">
        
       <h1 className="header__heading--main">Sasha Patsel</h1>
@@ -48,7 +63,7 @@ class App extends Component {
 
           </section>
 
-          <div className="transition"></div> 
+  
         
 
   <section className="portfolio" id="portfolio">
@@ -366,7 +381,7 @@ class App extends Component {
                           <div className="col-1-of-3">
                             <div className="card">
                               <div className="card__side card__side--front">
-                                <div className="card__picture card__picture--3">
+                                <div style={cards[1]} className="card__picture card__picture--3">
                                   &nbsp;
             </div>
 
