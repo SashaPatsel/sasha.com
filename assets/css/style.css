@@ -625,13 +625,12 @@ body {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 3rem;
-    background-image: linear-gradient(to left, #ED9415, #541BA1);
+    background-image: linear-gradient(to left, #541BA1, #ED9415);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2rem;
     text-transform: uppercase;
-    text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
     position: relative;
     left: 50%;
     transform: translateX(-50%); }
