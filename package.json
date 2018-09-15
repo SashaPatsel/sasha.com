@@ -2,6 +2,7 @@
   "name": "sp-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sashapatsel.github.io/sasha.com/",
   "dependencies": {
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",
