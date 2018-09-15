@@ -4,8 +4,20 @@ import logo from './logo.svg';
 import css from './App.css';
 
 const cards = {
-  "1": {
-    background: "assets/images/seatswap-demo.png"
+  "3": {
+    backgroundImage: 'url("assets/images/bamazon-demo.gif")'
+  },
+  "4": {
+    backgroundImage:  'url("assets/images/demo.gif")'
+  },
+  "5": {
+    backgroundImage:  'url("assets/images/hq-demo.png")'
+  },
+  "11": {
+    backgroundImage:  'url("assets/images/rate-a-restaurant.png")'
+  },
+  "12": {
+    backgroundImage:  'url("assets/images/hogwarts.png")'
   }
 }
 
@@ -193,7 +205,8 @@ class App extends Component {
               <div className="col-1-of-2">
                 <div className="card">
                   <div className="card__side card__side--front">
-                    <div className="card__picture card__picture--11">
+                    <div className="card__picture" style={cards["11"]}>
+                    
                       &nbsp;
             </div>
 
@@ -249,7 +262,7 @@ class App extends Component {
                 <div className="col-1-of-2">
                   <div className="card">
                     <div className="card__side card__side--front">
-                      <div className="card__picture card__picture--12">
+                      <div className="card__picture" style={cards["12"]}>
                         &nbsp;
             </div>
 
@@ -308,7 +321,7 @@ class App extends Component {
                   <div className="col-1-of-3">
                     <div className="card">
                       <div className="card__side card__side--front">
-                        <div className="card__picture card__picture--4">
+                        <div className="card__picture" style={cards["4"]}>
                           &nbsp;
                 </div>
 
@@ -352,7 +365,7 @@ class App extends Component {
                       <div className="col-1-of-3">
                         <div className="card">
                           <div className="card__side card__side--front">
-                            <div className="card__picture card__picture--5">
+                            <div className="card__picture" style={cards["5"]}>
                               &nbsp;
                 </div>
 
@@ -394,7 +407,7 @@ class App extends Component {
                           <div className="col-1-of-3">
                             <div className="card">
                               <div className="card__side card__side--front">
-                                <div style={cards[1]} className="card__picture card__picture--3">
+                                <div style={cards[3]} className="card__picture">
                                   &nbsp;
             </div>
 
